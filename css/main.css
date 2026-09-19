@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-900: #000000;
+  --primary-700: #525252;
+  --primary-500: #4336ff;
+  --primary-200: #e4e3e3;
+  --primary-100: #ececec;
+  --shade-white: #ffffff;
+  --main-font: Arial, Helvetica, sans-serif;
+  --mono-font: monospace;
+}
+
+html {
+  font-family: var(--main-font);
+  color: var(--primary-900);
+  font-size: 1.25rem;
+  background-color: var(--primary-100);
+}
+
+main {
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.5rem;
+}
+
+h2,
+h3 {
+  margin-top: 0.5rem;
+}
+
+.subtitle {
+  color: var(--primary-500);
+}
+
+h3 {
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+}
+
+article {
+  color: var(--primary-700);
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--primary-500);
+  font-size: 0.875rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.main-container {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.banner {
+  background-color: var(--primary-500);
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: var(--shade-white);
+  overflow: hidden;
+  font-family: var(--mono-font);
+}
+
+.banner span {
+  overflow: hidden;
+  text-wrap: nowrap;
+  display: block;
+}
+
+.btn-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: var(--shade-white);
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: var(--primary-900);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+.btn:hover {
+  background-color: var(--primary-900);
+  color: var(--shade-white);
+  transform: scale(0.96);
+  text-decoration: none;
+}
+
+.btn--primary {
+  background-color: var(--primary-500);
+  color: var(--shade-white);
+}
+
+.journal {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.journal__entry {
+  background-color: var(--shade-white);
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+/* .card {
+  background-color: var(--primary-100);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+} */
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li a {
+  color: var(--primary-900);
+  background-color: var(--shade-white);
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  display: block;
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card ul li a:hover {
+  color: var(--shade-white);
+  background-color: var(--primary-900);
+  transform: scale(0.99);
+  text-decoration: none;
+}
+
+.pill {
+  background-color: var(--primary-500);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 99rem;
+  color: var(--primary-100);
+  margin-bottom: 0.125rem;
+  display: inline-block;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-200);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-500);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-900);
+}
+
+::selection {
+  color: var(--shade-white);
+  background-color: var(--primary-900);
+}
