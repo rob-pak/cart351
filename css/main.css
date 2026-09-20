@@ -73,7 +73,6 @@ a:hover {
   font-size: 1.5rem;
   color: var(--shade-white);
   overflow: hidden;
-  font-family: var(--mono-font);
 }
 
 .banner span {
