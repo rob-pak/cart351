@@ -22,8 +22,7 @@ html {
   background-color: var(--primary-100);
 }
 
-body {
-}
+body {}
 
 main {
   margin-top: 2rem;
@@ -56,11 +55,32 @@ article {
 a {
   text-decoration: none;
   color: var(--primary-500);
-  font-size: 0.875rem;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+p+p {
+  margin-top: 1rem;
+}
+
+ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+em {
+  letter-spacing: -0.02em;
+}
+
+li::marker {
+  color: var(--primary-500);
 }
 
 .main-container {
@@ -145,6 +165,10 @@ a:hover {
 
 .card ul {
   list-style: none;
+}
+
+.card ul li {
+  margin-left: 0;
 }
 
 .card ul li a {
