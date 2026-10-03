@@ -1,6 +1,7 @@
 import requests
 from rich.console import Console
 from rich.table import Table
+from rich import box
 
 #Get planets data from web API
 url = "https://swapi.info/api/planets"
@@ -9,10 +10,10 @@ data = response.json()
 
 #Build table and its header
 console = Console()
-table = Table(show_header = True, header_style = "bold")
-table.add_column("NAME", style="magenta")
-table.add_column("DIAMETER", style="blue")
-table.add_column("POPULATION", style="green")
+table = Table(show_header = True, header_style = "bold", box=box.SIMPLE)
+table.add_column("Name", style="dim", min_width=12)
+table.add_column("Diameter", style="blue", min_width=12)
+table.add_column("Population", style="green", min_width=16)
 
 i = 0
 for planet in data:
