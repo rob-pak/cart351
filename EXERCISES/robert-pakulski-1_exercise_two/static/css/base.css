@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #131313;
+    --gray: #747474;
+    --light: #f2f2f2;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    color: var(--black);
+    letter-spacing: -0.0125em;
+    margin: 32px;
+}
+
+a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--black);
+}
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--light);
+    margin: 1rem 0;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 0.875rem;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    min-height: 75dvh;
+}
+
+h2,
+h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    background-color: var(--light);
+    color: var(--black);
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    transition: background-color 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.btn:hover {
+    background-color: #e5e5e5;
+}
+
+/* Result page CSS */
+
+fieldset {
+    border: none;
+    width: 75%;
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: var(--gray)
+}
+
+
+input:active,
+input:focus {
+    outline: none;
+    border-bottom: var(--black);
+}
+
+label {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.img-card {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-card img {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.img-card img:hover {
+    transform: scale(1.05);
+}
+
+.container p {
+    color: var(--gray);
+    font-size: 0.875rem;
+    max-width: 75%;
+    letter-spacing: 0;
+    line-height: 1.25;
+    margin-top: 0.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.active {
+    color: var(--black);
+}
+
+#form form {
+    top: 1rem;
+    position: sticky;
+}
