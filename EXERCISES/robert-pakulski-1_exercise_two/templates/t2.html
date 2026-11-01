@@ -1,0 +1,36 @@
+{% set active_page = "t2" %}
+{% extends "base.html" %}
+
+{% block content %}
+
+<section id="form">
+  <form action="{{url_for('getSearchCriteria_adv')}}">
+    <fieldset>
+      <p>
+        <label for="query">Search NASA Images</label>
+        <input id="query" type="text" size="24" maxlength="64" name="query" placeholder="moon landing" class="autofocus"
+          required>
+      </p>
+      <p>
+        <input id="submit" type="submit" value="Search" class="btn">
+      </p>
+    </fieldset>
+  </form>
+</section>
+
+
+<section id="results">
+  {% if have_results %}
+  <h3>Results</h3>
+  <div class="cards">
+    {% for url in images %}
+    <a href="{{url}}" target="_blank">
+      <div class="img-card">
+        <img src="{{url}}">
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+{% endblock %}
