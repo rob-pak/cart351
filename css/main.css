@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
 :root {
   --primary-900: #000000;
   --primary-700: #525252;
